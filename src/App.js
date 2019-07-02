@@ -1,12 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div role="main" className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <button
+          style={{
+            height: "40px",
+            width: "200px",
+            background: "cyan",
+            cursor: "pointer",
+            borderRadius: "4px",
+            color: "white"
+          }}
+          onClick={() => console.log("hello world")}
+        >
+          Button
+        </button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
